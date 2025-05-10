@@ -1,80 +1,99 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-  background-color: #fcdc58;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
 }
-a{
-    
-}
-#container {
-    position: relative;
+
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.header-left {
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-#photo {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
-#message {
-    font-size: 3em;
-    margin-top: 20px;
-    color: #ff69b4;
-}
-
-#note {
-    font-size: 1.5em;
-    margin-top: 10px;
-}
-
-#balloons {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('balloons.png');
-    background-size: cover;
-    z-index: -1;
-}
-
-#revealButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #ff69b4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#revealButton:hover {
-    background-color: #d1468c;
-}
-button {
-    background-color: #04AA6D; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
+.balance-section {
+    padding: 20px;
+    background-color: #1e1e1e;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    }
-    h3{
-        color: white;
-        font-size: 40px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    h1{
-        color: #d1468c;
-        font-size: 80px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+}
+
+.logo {
+    font-size: 24px;
+    color: #FF7A00;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 28px;
+}
+
+.buttons-section, .options-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #1e1e1e;
+    margin-bottom: 5px;
+}
+
+.button, .option {
+    padding: 10px 15px;
+    background-color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.promo-section {
+    background-color: #1e1e1e;
+    padding: 15px;
+    text-align: center;
+}
+
+.promo p {
+    font-weight: bold;
+}
+
+.loan-section {
+    background-color: #FF7A00;
+    padding: 20px;
+    text-align: center;
+}
+
+.loan-input {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer-item {
+    font-size: 14px;
+    cursor: pointer;
+}
